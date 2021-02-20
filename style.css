@@ -680,7 +680,7 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
-    home{
+    .home{
         
         background:linear-gradient(
             rgba(0, 0, 0, .1), 
