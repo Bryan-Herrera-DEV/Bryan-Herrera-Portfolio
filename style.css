@@ -680,6 +680,14 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    home{
+        
+        background:linear-gradient(
+            rgba(0, 0, 0, .1), 
+            rgba(0, 0, 0, .1)
+          ), url("images/banner.jpg") no-repeat center;
+       
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
