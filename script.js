@@ -1,10 +1,13 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
+       if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
+            $('.ggl').addClass("rotadd");
+            
         }else{
             $('.navbar').removeClass("sticky");
+            $('.ggl').removeClass("rotadd");
         }
         
         // scroll-up button show/hide script
