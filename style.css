@@ -278,7 +278,7 @@ section .title::after{
 .services .title:lang(es)::after,
 .teams .title:lang(es):after{
     background: #111;
-    content: "que proporciono?";
+    content: "Mis Servicios";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
