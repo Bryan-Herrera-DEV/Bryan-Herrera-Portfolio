@@ -213,8 +213,13 @@ section .title::after{
 }
 
 /* about section styling */
-.about .title::after{
-    content: "who i am";
+.about .title:lang( en ):after{
+    content: "Who i am";
+    translate: yes;
+}
+.about .title:lang( es ):after{
+    content: "Quien soy";
+    translate: yes;
 }
 .about .about-content .left{
     width: 45%;
@@ -265,10 +270,15 @@ section .title::after{
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.services .title:lang(en)::after,
+.teams .title:lang(en):after{
     background: #111;
     content: "what i provide";
+}
+.services .title:lang(es)::after,
+.teams .title:lang(es):after{
+    background: #111;
+    content: "que proporciono?";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -657,8 +667,8 @@ footer span a:hover{
     .home{
         
         background:linear-gradient(
-            rgba(0, 0, 0, 0.6), 
-            rgba(0, 0, 0, 0.6)
+            rgba(0, 0, 0, .6), 
+            rgba(0, 0, 0, .6)
           ), url("images/banner.jpg") no-repeat center;
        
     }
