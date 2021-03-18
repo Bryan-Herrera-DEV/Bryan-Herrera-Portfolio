@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,13 @@
     <meta name="author" content="bryherrera55@gmail.com" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bryan Herrera Portfolio">
-    <meta property="og:locale" content="es_EC">
-    <meta property="og:locale:alternate" content="en_UK" />
-    <meta property="og:description" content="Bryan Herrera WebDesigner">
+    
+    <meta property="og:description" content="Bryan Herrera / Portfolio / WebDesigner">
+    <meta property="og:image" content="images/profile-1.jpeg">
+    <link rel="shortcut icon" href="./images/logo.png">
     <meta property="og:image:width" content="200" />
     <meta property="og:image:height" content="200" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/bryanlolry/Bryan-Herrera-Portfolio/gh-pages/images/profile-11.jpg">
-    <link rel="shortcut icon" href="./images/logo.png">
-    
+
     <title>Bryan Herrera Porfolio</title>
     <link rel="stylesheet" href="style.css">
     
@@ -32,21 +31,100 @@
     <link href="./dist/fullPage.js-master/src/fullpage.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
+		<style>
+			#google_translate_element{
+				position: absolute;	
+				width: 71px;
+				height: 71px;
+			}
+	
+			.goog-te-banner-frame.skiptranslate {
+				display: none !important;
+			}
+
+			body {
+				top: 0px !important;
+			}
+			#google_translate_element {
+				position: absolute;
+				bottom: calc(53px + 16px);
+				right: 16px!important;
+				
+			}
+			.goog-te-gadget {
+			font-family: Roboto, 'Open Sans', sans-serif!important;
+			text-transform: uppercase;
+			}
+				.goog-te-gadget-simple  {
+				background-color: rgba(72, 72, 72, 0.8)!important;
+				border: 1px solid rgba(255,255,255,0.50) !important;
+				padding: 8px!important;
+				border-radius: 4px!important;
+				font-size: 1rem!important;
+				line-height:2rem!important;
+				display: inline-block;
+				cursor: pointer;
+				
+			}
+			.goog-te-menu2 {
+			max-width: 100%;
+			}
+			.goog-te-menu-value {
+			color: #fff !important;
+				
+			}
+
+			.goog-te-gadget-icon {
+				background-image: url(./images/icons8-logo-de-google-64.png) !important;
+				background-position: -50px 0px;
+				height: 32px!important;
+				width: 32px!important;
+			
+				
+			}
+	</style>
 <body>
 <div id="fullpage">
-    <div class="scroll-up-btn">
+<script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({includedLanguages: 'es,en,', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay:true, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="ggl show"  style="position: fixed;">
+	<div id="google_translate_element" class="google"></div>
+</div>
+<style>
+		.ggl{
+			left: 10px;
+			top: 100vh;
+			width: 71px;
+			height: 71px;
+			z-index: 50;
+			transition: all 300ms;
+		}
+		.rotadd{
+			transform: rotateZ(-90deg);
+			left: 95px;
+			top: 90vh;
+		}
+		
+</style>
+<div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo" translate="no"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home" class="menu-btn" translate="no">Home</a></li>
+                <li><a href="#about" class="menu-btn">Acerca de</a></li>
+                <li><a href="#services" class="menu-btn">Servicios</a></li>
+                <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+                <li><a href="#teams" class="menu-btn">Proyectos</a></li>
+                <li><a href="#contact" class="menu-btn">Contacto</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -58,10 +136,10 @@
     <section class="section home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Bryan Herrera</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="">Hire me</a>
+                <div class="text-1">Hola, Mi nombre es</div>
+                <div class="text-2" translate="no">Bryan Herrera</div>
+                <div class="text-3">Y yo soy <span class="typing" translate="no"></span></div>
+                <a href="mailto:bryherrera55@gmail.com?Subject=Quiero%20hablar%20sobre%20un%20prouecto%20contigo">contactame</a>
             </div>
         </div>
     </section>
@@ -69,14 +147,15 @@
     <!-- about section start -->
     <section class="section s1 about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title">Sobre mi</h2>
+			
             <div class="about-content">
                 <div class="column left">
                     <img src="images/profile-1.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Bryan and I'm a <span class="typing-2"></span></div>
-                    <p>web developer with several years of experience, I have always been passionate about computer science from a very young age since my mother taught me, I have been working with development technologies for 4 years ago I always keep up to date with each update that occurs day after day
+                    <div class="text">Soy Bryan y soy un <span class="typing-2" translate="no"></span></div>
+                    <p>Desarrollador web con varios años de experiencia, siempre he sido un apasionado de la informática desde muy joven. He estado trabajando con tecnologías de desarrollo hace 4 años, siempre manteniendo al día mis conocimientos con respecto a los cambios que se producen día a día.
                     </p>
                     <a href="./dist/CV.pdf">Download CV</a>
                 </div>
@@ -87,28 +166,27 @@
     <!-- services section start -->
     <section class=" section s2 services" id="services">
         <div class="max-width">
-            <h2 class="title">My services</h2>
+            <h2 class="title">Mis Servicios</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code "></i>
-                        <div class="text">Web Design</div>
-                        <p>Fast and beautiful web design with a pleasant user experience</p>
+                        <div class="text">Diseño web</div>
+                        <p>Diseño web rápido y hermoso con una experiencia de usuario agradable</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-server"></i>
-                        <div class="text">Secure Server's</div>
-                        <p>Creation of secure systems and secure databases</p>
+                        <div class="text">Servidores seguros</div>
+                        <p>Creación de sistemas seguros y bases de datos seguras.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">
-                            Graphic Design</div>
-                        <p>Logo design and edit of your best photos</p>
+                        <div class="text">Diseño grafico</div>
+                        <p>Diseño de logo y edición de tus mejores fotos</p>
                     </div>
                 </div>
                </div>
@@ -119,12 +197,12 @@
     <!-- skills section start -->
     <section class="section s3 skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title">Mis habilidades</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                    <a href="#">Read more</a>
+                    <div class="text">Mis habilidades creativas y experiencias</div>
+                    <p>Mi experiencia en el manejo del DOM con JavaScript y el diseño UX y UI es bastante extensa ya que he programado varios proyectos personales. El manejo de Bases de datos y creacion de backends de manera optima con el uso de PHP es mi fotaleza mas grande.</p>
+                    
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -289,5 +367,6 @@
 </div>
 
     <script src="script.js"></script>
+	
 </body>
 </html>
