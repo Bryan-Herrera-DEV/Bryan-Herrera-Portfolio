@@ -34,11 +34,11 @@ $(document).ready(function(){
        
          }
         
-        // scroll-up button show/hide script
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
+       // scroll-up button show/hide script
+        if (this.scrollY > 500) {
+            $('.circular-menu').addClass("show");
+        } else {
+            $('.circular-menu').removeClass("show");
         }
     });
 
