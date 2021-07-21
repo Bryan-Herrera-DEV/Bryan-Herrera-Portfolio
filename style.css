@@ -459,7 +459,7 @@ section .title::after {
     background: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);   
     box-shadow: 0px 0px 5px rgba(252, 56, 56, 1);
 }
-/* teams section styling */
+/* teams secaaation styling */
 .teams {
     min-height: 500px;
     z-index: 99;
