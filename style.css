@@ -375,6 +375,7 @@ section .title::after {
     background-size: cover;
 }
 
+
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
@@ -458,27 +459,6 @@ section .title::after {
     background: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);   
     box-shadow: 0px 0px 5px rgba(252, 56, 56, 1);
 }
-
-.skills-content .right .html::before {
-    width: 90%;
-}
-
-.skills-content .right .css::before {
-    width: 60%;
-}
-
-.skills-content .right .js::before {
-    width: 80%;
-}
-
-.skills-content .right .php::before {
-    width: 60%;
-}
-
-.skills-content .right .mysql::before {
-    width: 50%;
-}
-
 /* teams section styling */
 .teams {
     min-height: 500px;
@@ -487,6 +467,7 @@ section .title::after {
     overflow: visible;
     background-size: cover;
 }
+
 
 .teams .title::after {
     content: "who with me";
@@ -580,6 +561,7 @@ section .title::after {
     overflow: visible;
     background-size: cover;
 }
+
 
 .contact .contact-content .column {
     width: calc(50% - 30px);
@@ -879,6 +861,43 @@ footer span a:hover {
 
 
 @media (max-width: 947px) {
+
+    .about {
+        min-height: 500px;
+        z-index: 99;
+        background: url(./images/svg/fondo/waves-static.svg) no-repeat center ;
+        overflow: visible;
+        background-size: cover;
+    }
+    .services {
+        min-height: 500px;
+        z-index: 99;
+        background: url(./images/svg/fondo/waves2-static.svg) no-repeat center ;
+        overflow: visible;
+        background-size: cover;
+    }
+    .skills {
+        min-height: 500px;
+        z-index: 99;
+        background: url(./images/svg/fondo/waves-static.svg) no-repeat center ;
+        overflow: visible;
+        background-size: cover;
+    }
+    .teams {
+        min-height: 500px;
+        z-index: 99;
+        background: url(./images/svg/fondo/waves2-static.svg) no-repeat center ;
+        overflow: visible;
+        background-size: cover;
+    }
+    .contact {
+        min-height: 500px;
+        z-index: 99;
+        background: url(./images/svg/fondo/waves-static.svg) no-repeat center ;
+        overflow: visible;
+        background-size: cover;
+    }
+
     .menu-btn {
         display: block;
         z-index: 999;

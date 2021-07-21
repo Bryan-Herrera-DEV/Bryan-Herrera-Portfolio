@@ -15,7 +15,7 @@
     <meta name="author" content="bryherrera55@gmail.com" />
     <meta name="google-site-verification" content="VFIoBukbxlXNN3cDw3_aaIGXvk0LbfAB1O9l7Ii6Wzg" />
     <link rel=“canonical” href="https://bryan-herrera.netlify.app/">
-	
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bryan-herrera.netlify.app/">
     <meta property="og:title" content="Bryan Herrera | PORTFOLIO">
@@ -40,8 +40,7 @@
 
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
-    <meta name="robots" content="index, nofollow">
-    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="robots" content="index">
 
 
     <link rel="stylesheet"
@@ -51,16 +50,19 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./dist/animsition/animation.min.css">
-	
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ2B4RXKLV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-YJ2B4RXKLV');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJ2B4RXKLV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YJ2B4RXKLV');
+    </script>
 
 </head>
 
@@ -70,10 +72,13 @@
             <i class="fa fa-plus"></i>
         </a>
         <menu class="items-wrapper">
-            <a href="https://api.whatsapp.com/send?phone=593988358745&text=Hola%20Bryan%20%C2%BFQue%20tal%20si%20hablamos?" class="menu-item"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/bryan_herrera_7w7/" class="menu-item"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=593988358745&text=Hola%20Bryan%20%C2%BFQue%20tal%20si%20hablamos?"
+                class="menu-item"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/bryan_herrera_7w7/" class="menu-item"><i
+                    class="fab fa-instagram"></i></a>
             <a href="#contact" class="menu-item"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/bryan-herrera-dev/" class="menu-item"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/bryan-herrera-dev/" class="menu-item"><i
+                    class="fab fa-linkedin-in"></i></a>
         </menu>
     </div>
     <div id="fullpage">
@@ -99,8 +104,7 @@
                     <div class="text-1" data-aos="fade-right">Hola, Mi nombre es</div>
                     <h1 class="text-2" data-aos="fade-left" translate="no">Bryan Herrera</h1>
                     <div class="text-3" data-aos="fade-right">Y yo soy <span class="typing" translate="no"></span></div>
-                    <a
-                        href="#contact">contactame</a>
+                    <a href="#contact">contactame</a>
                 </div>
             </div>
         </section>
@@ -152,7 +156,6 @@
                     </div>
                 </div>
             </div>
-    </div>
     </section>
 
     <section class="section s3 skills" id="skills">
@@ -171,37 +174,27 @@
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
                         </div>
-                        <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>60%</span>
                         </div>
-                        <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>70%</span>
                         </div>
-                        <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>NodeJs</span>
-                            <span>60%</span>
                         </div>
-                        <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>MySQL</span>
-                            <span>50%</span>
                         </div>
-                        <div class="line mysql"></div>
                     </div>
                 </div>
             </div>
@@ -293,31 +286,35 @@
                     </div>
                     <div class="column right">
                         <script>
-                            window.onerror=new Function("return true");
-                    
+                            window.onerror = new Function("return true");
+
                             function sendMail() {
-                            var link = "bryherrera55@gmail.com" 
-                            + "?&subject=" + escape(document.getElementById('subject').value)
-                            + "&body=" + "Me llamo " + escape(document.getElementById('nombre').value) + ", " + escape(document.getElementById('comment').value);
-                    
-                            window.location.href = "mailto:" +link;
+                                var link = "bryherrera55@gmail.com" +
+                                    "?&subject=" + escape(document.getElementById('subject').value) +
+                                    "&body=" + "Me llamo " + escape(document.getElementById('nombre').value) + ", " +
+                                    escape(document.getElementById('comment').value);
+
+                                window.location.href = "mailto:" + link;
                             }
-                            </script>
+                        </script>
                         <div class="text">Message me</div>
                         <form>
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" name="nombre" autocomplete="off" id="nombre" required>
+                                    <input type="text" placeholder="Name" name="nombre" autocomplete="off" id="nombre"
+                                        required>
                                 </div>
                                 <div class="field email">
-                                    <p type="email" placeholder="Email" autocomplete="off" required>Se usara el Email/Correo de tu computador.</p>
+                                    <p>Se usara el
+                                        Email/Correo de tu computador.</p>
                                 </div>
                             </div>
                             <div class="field">
                                 <input type="text" placeholder="Subject" id="subject" autocomplete="off" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Message.." id="comment" required></textarea>
+                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Message.." id="comment"
+                                    required></textarea>
                             </div>
                             <div class="button-area">
                                 <button type="submit" onclick="sendMail(); return false">Send message</button>
@@ -341,8 +338,8 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="./dist/animsition/animation.js"></script>
-        <script type="text/javascript"
-            src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js">
+        </script>
         <script type="text/javascript"
             src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
         <script type="text/javascript">
@@ -351,27 +348,7 @@
             });
         </script>
         <script src="script.js"></script>
-        <!-- codigo para mostrar banner en la consola
-    <script>
-
-        window.onload = function ()  {
-	var i = "background-image: url('https://mundosica.com/wp-content/uploads/2015/10/logo-mundo-sica.png');background-repeat:no-repeat;display:block;background-size:150px 105px;padding-top:105px;padding-left:0;height:105px;width:160px;margin-top:0;margin-left:0;"
-	, a = "font-family: Helvetica, Arial, sans-serif;"
-	, s = a + "; font-size: 32px; line-height: 1.5; color: #F43B00;"
-	, l = a + "; font-size: 14px; line-height: 1.15rem; color: #F43B00"
-	, d = l + "; text-decoration: underline;"
-	, f = ""
-	, text = "                        \n"
-		+ "%cSí, somos los desarrolladores de.\n%chttps://mundosica.com/%c"
-		+ "\n Si deseas un sistema chingón favor de contactarnos.\n";
-	if (navigator.userAgent.match(/chrome/i)) {
-		window.console.log('\n\n\n\n%c' + text, i, l, d, l);
-	} 
-	else {
-		window.console.log('%cMundosica.com' + text, s, l, d, l);
-	}
-};
-    </script> -->
+        
 
 </body>
 
