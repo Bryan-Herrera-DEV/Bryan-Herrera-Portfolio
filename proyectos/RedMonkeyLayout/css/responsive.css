@@ -1,0 +1,275 @@
+/*==============================================================================
+
+ * Template Name: Zuman - Creative Personal Portfolio
+ * Template URI: 
+ * Author: ixtheme - (https://themeforest.net/user/ixtheme)
+ * Description: Personal Portfolio Template
+ * Version: 1.0
+ * Copyright 2018 ixtheme
+
+ ==============================================================================*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Large devices (desktops, 991px and down) */
+
+@media (max-width: 991px) {
+    .nav-btn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 30px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .menu_items {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        background: rgb(34, 35, 41);
+        padding-bottom: 20px;
+        top: 85px;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -o-transform: scaleY(0);
+        transform-origin: top;
+    }
+    .menu_items.show {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -o-transform: scaleY(1);
+    }
+    .header_fixed .menu_items {
+        top: 75px;
+    }
+    .menu_items li,
+    .header_fixed .menu_items li {
+        display: block;
+        height: inherit;
+        line-height: 45px;
+        height: 45px;
+    }
+    .menu_items li {
+        opacity: 0;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition-delay: .3s;
+    }
+    .menu_items.show li {
+        opacity: 1;
+    }
+    .menu_item {
+        padding: 0;
+    }
+    .menu_items .menu_item::after {
+        width: 4px;
+        left: calc(50% - 2px);
+    }
+    .menu_items .menu_item.active::after {
+        width: 50px;
+        left: calc(50% - 25px);
+    }
+    .menu_items li:last-child .menu_item.active::after {
+        left: calc(50% - 25px);
+    }
+    .works .row > .col-lg-10,
+    .services .row > .col-lg-10 {
+        padding: 0 65px;
+    }
+    .work_wrapper,
+    .contact_wrapper {
+        padding: 100px 50px;
+    }
+    .about {
+        padding: 0 50px;
+    }
+    .contact_item {
+        display: inline-block;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    .about_info h4 {
+        font-size: 23px;
+    }
+    .landing_content h1 {
+        font-size: 60px;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+
+@media (max-width: 767px) {
+    .home_wrapper {
+        height: 600px;
+    }
+    .about_info h4 {
+        margin-top: 50px;
+    }
+    .services .row > .col-lg-10 {
+        padding: 0 45px;
+    }
+    .counter,
+    .testimonials,
+    .work_wrapper,
+    .contact_wrapper {
+        padding: 100px 30px;
+    }
+    .counter .row .col-lg-10 .row .col-sm-6:nth-child(1), 
+    .counter .row .col-lg-10 .row .col-sm-6:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    .work-popup {
+    	padding: 60px 15px;
+    }
+    .about_img .about_img_1.bottom {
+        top: -65px;
+    }
+    .about_img .about_img_2 {
+        top: 12px;
+    }
+    .about {
+        padding: 0 30px;
+    }
+}
+
+/* Small devices (mobile, 575px and down) */
+@media (max-width: 575px) {
+    .home_wrapper {
+        height: 450px;
+    }
+    .about_info p.about_desc {
+        font-size: 16px;
+    }
+    .about_info p.about_desc span {
+        font-size: 17px;
+    }
+    .landing_content h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+    .work_details_text h2 {
+        font-size: 25px;
+    }
+    .work-popup {
+    	padding: 60px 0px;
+    }
+    .work-popup .work-info h4 {
+    	font-size: 25px;
+    }
+    .work-popup .work-details-2 .work-info {
+    	margin-bottom: 60px;
+    }
+    .layout-fixed {
+        padding-right: 0;
+    }
+    .layout-fixed header {
+        width: 100%;
+    }
+    .about_img .about_img_1.bottom {
+        top: -55px;
+    }
+    .about_img .about_img_2 {
+        top: 20px;
+    }
+    .filter-buttons {
+        margin-bottom: 40px;
+    }
+    .filter-buttons button {
+        padding: 0 10px;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* extraSmall devices ( 400px and down) */
+@media (max-width: 400px) {
+    header {
+        height: 70px;
+        line-height: 70px;
+    }
+    .header_fixed .menu_items,
+    .menu_items {
+        top: 70px;
+    }
+    .section_title {
+        margin-bottom: 110px;
+    }
+    .logo img {
+        height: 16px;
+    }
+    .about_wrapper {
+        padding: 75px 0;
+        margin-top: 75px;
+    }
+    .counter,
+    .testimonials,
+    .work_wrapper,
+    .contact_wrapper {
+        padding: 75px 15px;
+    }
+    .clients,
+    .services {
+        padding: 75px 0;
+    }
+    .about {
+        padding: 0 15px;
+    }
+    .services .row > .col-lg-10 {
+        padding: 0 30px;
+    }
+    .landing_content h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .landing_content h4 {
+        font-size: 21px;
+    }
+    .section_title {
+        font-size: 25px;
+    }
+    .counter span {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .counter h4 {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+    .counter i {
+        margin-bottom: 12px;
+    }
+    .testimonial_single_item p {
+        line-height: 170%;
+    }
+    .no-bg-img .home_wrapper {
+        padding-top: 120px;
+    }
+    .about_info h4 {
+        font-size: 20px;
+    }
+}
