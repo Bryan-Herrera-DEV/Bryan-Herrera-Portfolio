@@ -2,7 +2,7 @@ AOS.init({});
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-       if(this.scrollY > 20){
+    if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
             $('.ggl').addClass("rotadd");
             $('.menu-btn').removeClass("cambio");
@@ -23,6 +23,14 @@ $(document).ready(function(){
                     $('.borrarr').removeClass("animsition");
                     
                     document.getElementById("div1").removeAttribute("data-aos");               
+                    document.getElementById("div2").removeAttribute("data-aos");               
+                    document.getElementById("div3").removeAttribute("data-aos");               
+                    document.getElementById("div4").removeAttribute("data-aos");               
+                    document.getElementById("div5").removeAttribute("data-aos");               
+                    
+                    
+                    
+                    
                     $('.menu-btn').removeClass("cambio");
 
                 }else{
